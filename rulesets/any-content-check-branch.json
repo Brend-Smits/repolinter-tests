@@ -7,18 +7,6 @@
     "packagers": "packager"
   },
   "rules": {
-    "test-if-secondary-content-exists-in-branch": {
-      "level": "warning",
-      "rule": {
-        "type": "any-file-contents",
-        "options": {
-          "globsAny": ["content.txt"],
-          "content": "SECONDARYCONTENT",
-          "fail-on-non-existent": true,
-          "branches": ["default","file-content-test-branch"]
-        }
-      }
-    },
     "test-if-main-content-exists-in-default": {
       "level": "warning",
       "rule": {
@@ -26,6 +14,18 @@
         "options": {
           "globsAny": ["content.txt"],
           "content": "MAINCONTENT",
+          "fail-on-non-existent": true,
+          "branches": ["default","file-content-test-branch"]
+        }
+      }
+    },
+    "test-if-secondary-content-exists-in-branch": {
+      "level": "warning",
+      "rule": {
+        "type": "any-file-contents",
+        "options": {
+          "globsAny": ["content.txt"],
+          "content": "SECONDARYCONTENT",
           "fail-on-non-existent": true,
           "branches": ["default","file-content-test-branch"]
         }
