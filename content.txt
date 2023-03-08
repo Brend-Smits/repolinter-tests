@@ -1,0 +1,2 @@
+This is a repolinter-test file to check the branch file-content rule check.
+In the main branch this file includes the content "MAINCONTENT", in the develop branch it does not.
