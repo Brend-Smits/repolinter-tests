@@ -15,7 +15,7 @@
           "globsAny": ["content.txt"],
           "content": "MAINCONTENT",
           "fail-on-non-existent": true,
-          "branches": ["default","file-content-test-branch"]
+          "branches": ["main","file-content-test-branch"]
         }
       }
     },
