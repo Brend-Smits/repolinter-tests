@@ -1,0 +1,35 @@
+{
+  "$schema": "./schema.json",
+  "version": 2,
+  "axioms": {
+    "linguist": "language",
+    "licensee": "license",
+    "packagers": "packager"
+  },
+  "rules": {
+    "test-if-secondary-content-exists-in-branch": {
+      "level": "warning",
+      "rule": {
+        "type": "any-file-contents",
+        "options": {
+          "globsAll": ["content.txt"],
+          "content": "SECONDARYCONTENT",
+          "fail-on-non-existent": true,
+          "branches": ["default","file-content-test-branch"]
+        }
+      }
+    },
+    "test-if-main-content-exists-in-default": {
+      "level": "warning",
+      "rule": {
+        "type": "any-file-contents",
+        "options": {
+          "globsAll": ["content.txt"],
+          "content": "MAINCONTENT",
+          "fail-on-non-existent": true,
+          "branches": ["default","file-content-test-branch"]
+        }
+      }
+    }
+  }
+}
