@@ -8,7 +8,7 @@
   },
   "rules": {
     "test-if-main-content-exists-in-default": {
-      "level": "warning",
+      "level": "error",
       "disableAsync": true,
       "rule": {
         "type": "file-contents",
