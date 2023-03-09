@@ -1,0 +1,24 @@
+{
+  "$schema": "./schema.json",
+  "version": 2,
+  "axioms": {
+    "linguist": "language",
+    "licensee": "license",
+    "packagers": "packager"
+  },
+  "rules": {
+    "test-if-secondary-content-exists-in-branch": {
+      "level": "warning",
+      "disableAsync": true,
+      "rule": {
+        "type": "any-file-contents",
+        "options": {
+          "globsAny": ["content.txt"],
+          "content": "SECONDARYCONTENT",
+          "fail-on-non-existent": true,
+          "branches": ["file-content-test-branch"]
+        }
+      }
+    }
+  }
+}
