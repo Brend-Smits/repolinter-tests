@@ -1,0 +1,24 @@
+{
+  "$schema": "./schema.json",
+  "version": 2,
+  "axioms": {
+    "linguist": "language",
+    "licensee": "license",
+    "packagers": "packager"
+  },
+  "rules": {
+    "test-if-main-content-exists-in-default": {
+      "level": "warning",
+      "disableAsync": true,
+      "rule": {
+        "type": "file-contents",
+        "options": {
+          "globsAll": ["content.txt"],
+          "content": "SECONDARYCONTENT",
+          "fail-on-non-existent": true,
+          "branches": ["main"]
+        }
+      }
+    }
+  }
+}
