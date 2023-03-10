@@ -9,7 +9,7 @@
   "rules": {
     "test-if-main-content-exists-in-default": {
       "level": "error",
-      "disableAsync": true,
+      "sequentialOnly": true,
       "rule": {
         "type": "file-contents",
         "options": {
