@@ -9,7 +9,7 @@
   "rules": {
     "test-if-secondary-content-exists-in-branch": {
       "level": "warning",
-      "disableAsync": true,
+      "sequentialOnly": true,
       "rule": {
         "type": "any-file-contents",
         "options": {
