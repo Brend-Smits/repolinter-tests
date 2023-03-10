@@ -9,7 +9,7 @@
   "rules": {
     "test-if-main-content-exists-in-default": {
       "level": "warning",
-      "disableAsync": true,
+      "sequential-only": true,
       "rule": {
         "type": "any-file-contents",
         "options": {
@@ -22,7 +22,7 @@
     },
     "test-if-secondary-content-exists-in-branch": {
       "level": "warning",
-      "disableAsync": true,
+      "sequential-only": true,
       "rule": {
         "type": "any-file-contents",
         "options": {
