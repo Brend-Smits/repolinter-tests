@@ -16,7 +16,7 @@
           "globsAny": ["content.txt"],
           "content": "MAINCONTENT",
           "fail-on-non-existent": true,
-          "branches": ["main","file-content-test-branch"]
+          "branches": ["file-content-test-branch"]
         }
       }
     },
@@ -29,7 +29,7 @@
           "globsAny": ["content.txt"],
           "content": "SECONDARYCONTENT",
           "fail-on-non-existent": true,
-          "branches": ["default","file-content-test-branch"]
+          "branches": ["file-content-test-branch"]
         }
       }
     }
